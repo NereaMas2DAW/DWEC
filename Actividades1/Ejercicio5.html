@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <title>Page Title</title>
+</head>
+<body>
+    <script>
+        let edad,totalDias,totalEnHoras,totalEnMinutos,totalEnSegundos,edadEndias,edadEnHoras,edadEnMinutos,edadEnSegundos;
+        edad = parseFloat(prompt("Escribe tu edad"));
+
+        totalDias= 100 * 365;
+        totalEnHoras= totalDias * 24;
+        totalEnMinutos= totalEnHoras * 60;
+        totalEnSegundos= totalEnMinutos * 60;
+
+        edadEndias= edad * 365;
+        edadEnHoras= edadEndias * 24;
+        edadEnMinutos=edadEnHoras * 60;
+        edadEnSegundos=edadEnMinutos * 60;
+       
+        alert("Te quedan para cumplir 100 años"+"\n"+ (totalDias-edadEndias) + " dias "+"\n"+ (totalEnHoras-edadEnHoras) + " horas "+"\n" +  (totalEnMinutos-edadEnMinutos)+ " minutos "+"\n" + (totalEnSegundos-edadEnSegundos) + " segundos "+"\n" );
+    </script>
+</body>
+</html>
